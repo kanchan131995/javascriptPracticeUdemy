@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output">page1</div>
+        <input type="text" id="e1" value="kanchan" onchange="myfun()" >
+        <input type="text" id="e2" value="tiwari" onchange="myfun()">
+        <input type="button" value="submit">
+        <script>
+           function myfun(){
+               var p=event.target;
+               if(p.id=="e1")
+               {
+               message("first name changed to "+p.value);
+               }
+               else{
+                message("last name changed to "+p.value);
+
+               }
+               
+           }
+           function message(m){
+            document.getElementById("output").innerHTML=m;
+           }
+
+        </script>
+    </body>
+</html>

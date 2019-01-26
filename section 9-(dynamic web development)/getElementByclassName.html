@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+        <style>
+            .highlight{
+                background-color: yellow;
+            }
+        
+        </style>
+    </head>
+    <body>
+            <div id="output"></div>
+            <form name="myForm">
+            <input type="text" id="first" class="highlight">
+            <input type="text" id="last">
+            <input type="url"  id="url" class="highlight">
+            <textarea  id="output1" ></textarea>
+           
+            <div id="parent">parent
+                <div id="child1">child 1</div>
+                <div id="child2">child 2</div>
+                <div id="child3" class="highlight">child 3</div>
+                <div id="child4" >child 4</div>
+                <div id="child5" class="highlight">child 5</div>
+                <div id="child6">child 6</div>
+            </div>
+            <input type="button" value="click me" onclick="myfun()">
+        </form>
+        <script>
+                var output=document.getElementById("output");
+                var divList=document.getElementsByTagName("div");
+                var highlightList=document.getElementsByClassName("highlight");
+                html=divList[0].innerHTML;
+                output.innerHTML=html;
+                // divList[0].innerHTML="hello world";
+                var arr=[];
+                function myfun()
+                {
+                    var html="Div List <br>";
+                    for (var x=1;x<divList.length;x++)
+                    {
+                        
+                        html+=divList[x].innerText +"<br>";
+                    }
+                    for (var x=0;x<highlightList.length;x++)
+                    {
+                        
+                        
+                        if(highlightList[x].value)
+                        {
+                            html+=highlightList[x].value +"<br>";
+
+                        }
+                    }
+                    output.innerHTML=html ;
+                }
+    
+            
+            </script>
+    </body>
+</html>

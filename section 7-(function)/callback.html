@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+    <input type="text" id="num1"/>
+    <input type="text" id="num2"/>
+    <input type="button" onclick="add()" value="add"/>
+    <input type="button" onclick="sub()" value="sub"/>
+    <input type="button" onclick="multiply()" value="multiply"/>
+    <input type="button" onclick="divide()" value="divide"/>
+    <div id="output"></div>
+    <script>
+        var output=document.getElementById("output");
+        var num1=document.getElementById("num1");
+        var num2=document.getElementById("num2");
+
+        function doit(a,b,s,callback)
+        {
+            result=callback(Number(a),Number(b));
+            output.innerHTML+=a+s+b+"="+ result;
+        }
+        function add()
+        {
+            doit(num1.value,num2.value,"+",function(c,d){
+                return (c+d);
+            })
+        }
+        function sub()
+        {
+            doit(num1.value,num2.value,"-",function(c,d){
+                return (c-d);
+            })
+        }
+
+        function multiply()
+        {
+            doit(num1.value,num2.value,"*",function(c,d){
+                return (c*d);
+            })
+        }
+        function divide()
+        {
+            doit(num1.value,num2.value,"/",function(c,d){
+                return (c/d);
+            })
+        }
+
+
+
+    
+    </script>
+    </body>
+</html>

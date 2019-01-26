@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+        var choose=prompt("what you want rock/paper/scissor");
+        var computer=Math.floor(Math.random()*3);
+        switch(choose)
+        {
+            case "rock":
+            result=0;
+            break;
+            
+            case "paper":
+            result=1;
+            break;
+            
+            case "scissor":
+            result=2;
+            break;
+            
+        }
+        alert(result);
+        alert(computer);
+        if(result==0 && computer==2)
+        {
+            answer="you win";
+        }
+        else if(result==1 && computer==0)
+        {
+            answer="you win";
+        }
+        else if(result==2 && computer==1)
+        {
+            answer="you win";
+        }
+
+        else if(computer==0 && computer==2)
+        {
+            answer="computer win";
+        }
+        else if(result==0 && computer==1)
+        {
+            answer="computer win";
+        }
+        else if(result==1 && computer==2)
+        {
+            answer="computer win";
+        }
+        else{
+            answer="no one win";
+        }
+
+        output.innerHTML=answer;
+
+
+
+
+
+        </script>
+    </body>
+</html>

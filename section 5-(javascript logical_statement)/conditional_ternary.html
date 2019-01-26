@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <title>
+    udemy course
+
+    </title>
+</head>
+
+<body>
+    <div id="output"> hello world</div>
+    <script>
+    var arr=["tom","jerry","marry","luke","mike"];
+    var output=document.getElementById("output")
+    var name=prompt("enter the name");
+    var index=arr.indexOf(name);
+    var htmloutput= (index>=0)?output.innerHTML="okay":output.innerHTML="not okay";
+
+    // if(index>-1)
+    // {
+    //     (alert("welcome"),output.innerHTML="okay")
+    // }
+    // else{
+    //     alert("welcome"),output.innerHTML="not okay";
+    // }
+
+    var age=prompt("enter your age");
+    htmloutput+=(age>18)?"you are above under age": "you are under age";
+
+
+    </script>
+</body>
+</html>

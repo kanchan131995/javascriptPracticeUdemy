@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+        <style>
+            .box{
+                height:100px;
+                width:100px;
+                display:inline-block;
+                border: 1px solid black;
+                margin:10px 50px;
+            }
+            #getEle{
+                background-color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="output"></div>
+        <div class="box" ondrop="dDrop()" ondragover="ndrop()"><div id="getEle" ondragstart="dStart()" draggable="true">Drag me Please </div>1</div>
+        <div class="box" ondrop="dDrop()" ondragover="ndrop()">2</div><br>
+        <div class="box" ondrop="dDrop()" ondragover="ndrop()">3</div>
+        <div class="box" ondrop="dDrop()" ondragover="ndrop()">4</div>
+        <script>
+            var output=document.getElementById("output");
+            var holderItem;
+            function dStart()
+            {
+                message("drag started");
+                holderItem=event.target;
+
+
+            }
+            function dDrop()
+            {
+                message("drag started");
+                event.preventDefault();
+
+            }
+            function ndrop()
+            {
+                event.preventDefault();
+                message("drop it");
+                if(event.target.className=="box")
+                {
+                    event.target.appendChild(holderItem);
+                }
+
+            }
+            function message(m)
+            {
+                output.innerHTML=m;
+
+            }
+
+        </script>
+    </body>
+</html>

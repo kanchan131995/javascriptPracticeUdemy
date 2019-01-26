@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"><h1>Shopping List</h1></div>
+    <script>
+        var output=document.getElementById("output");
+        var itemNo=prompt("enter the number of item you want to add");
+        var shoppingItem=[];
+        for(var x=0;x<itemNo;x++)
+        {
+            addItem=prompt("enter the item");
+            shoppingItem.push(addItem);
+            if(addItem=="no")
+            break;
+
+        }
+        for( var x=0;x<itemNo;x++)
+        {
+            output.innerHTML+=shoppingItem[x]+"<br>";
+        }
+    </script>
+    </body>
+</html>

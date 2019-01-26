@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            var output=document.getElementById("output");
+            var question=prompt("ask me anything");
+            var result=Math.floor(Math.random()*6);
+
+            switch(result)
+            {
+                case 0: answer="fine";
+                break;
+                case 1: answer="i will find out";
+                break;
+                case 2: answer="not working";
+                break;
+                case 3: answer="probably yes";
+                break;
+                case 4: answer="not done";
+                break;
+                case 5: answer="we will do something";
+                break;
+            }
+
+            output.innerHTML="you ask about "+ question+ "<br> answer is " +answer;
+        
+        </script>
+    </body>
+</html>

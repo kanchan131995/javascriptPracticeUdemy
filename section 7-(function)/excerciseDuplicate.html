@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+        var output=document.getElementById("output");
+        var arr=["java","html","tom","css","jerry","luke","mary","luke","html",2,3,4,2,3];
+        var newArray=removeDuplicate(arr);
+        output.innerHTML+=arr+"<br>"+newArray;
+        function removeDuplicate(arr)
+        {
+            console.log(arr);
+            var newObj={};
+            var myArray=[];
+            for(var x=0; x<arr.length;x++)
+            {
+                newObj[arr[x]]="whatever";
+                
+            }
+            for(var x in newObj)
+            {
+                console.log(x);
+                myArray.push(x);
+            }
+            return myArray;
+
+
+        }
+
+        </script>
+    </body>
+</html>

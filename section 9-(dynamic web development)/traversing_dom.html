@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <form name="myForm">
+        <input type="url" id="url"  value="url1">
+        <input type="firstName" id="first" value="firstName">
+        <input type="lastName" id="last" value="lastName">
+        <textarea id=""></textarea>
+        <div id="parent">Parent
+            <div id="child1">child 1</div>
+            <div id="child2">child 2</div>
+            <div id="child3">child 3</div>
+            <div id="child4">child 4</div>
+            <div id="child5">child 5</div>
+        </div>
+        <input type="btn1" onclick="myfun()" value="click here">
+    </form>
+        
+    <script>
+        var url=document.body.children.myForm.children.parent.children.child4;
+     function myfun()
+        {
+            var t=event.target.value;
+            console.log(t);
+        }
+        url.innerHTML="updated to child4";
+        
+
+    
+    </script>
+    </body>
+</html>

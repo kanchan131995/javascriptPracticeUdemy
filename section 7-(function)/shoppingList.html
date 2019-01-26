@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <input type="text" id="add1" />
+        <input type="button" onclick="additem()" value="ADD"/>
+        <div id="output"></div>
+        <script>
+       var  output=document.getElementById("output");
+        var add1=document.getElementById("add1");
+        
+        var shoppingList=[];
+        
+        var count=0;
+        function additem()
+        {
+            var x=add1.value;
+        
+                 shoppingList.push(x);
+                 count=count+1;
+                
+                 display(shoppingList); 
+             
+        add1.value=" ";
+       }
+       
+
+       function display(shoppingList)
+       {
+        
+        output.innerHTML+=count+" "+shoppingList[count-1]+"<br>";     
+       }
+       
+        </script>
+    </body>
+</html>

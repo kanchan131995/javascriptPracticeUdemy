@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"></div>
+    
+        <script>
+
+            var output=document.getElementById("output");
+            var userInput=prompt("what you choose head or tail");
+            var userNumber=(userInput=="head")?1:0;
+            var result=Math.random();
+            if (result>0.5)
+            {
+               result=0; 
+            }
+            else{
+                result=1;
+            }
+            var html=(result==userNumber)?"you won":"you lose";
+            output.innerHTML=html;
+            
+
+
+        
+        </script>
+    </body>
+</html>

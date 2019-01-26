@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            udemy coyrse
+        </title>
+        <style >
+        .highlight{
+        background-color: yellow;    
+        }
+        </style>
+    </head>
+    <body>
+        <div id="message"></div>
+        <div id="message1"></div>
+        <div class="output highlight">Text 1</div>
+        <div class="output">Text 2</div>
+        <div class="output">Text 3</div>
+        <div class="output highlight">Text 4</div>
+        <div class="output">Text 4</div>
+        <div class="output">Text 6</div>
+        <div class="output">Text 7</div>
+        <div class="output">Text 8</div>
+        <div class="output">Text 9</div>
+        <div class="output">Text 10</div>
+
+        <script>
+          var output= document.getElementsByClassName("output");
+          var highlight=document.getElementsByClassName("highlight");
+          for(x=0;x<output.length;x++)
+          {
+              var el=output[x];
+              var message=document.getElementById("message");
+              el.onclick=function()
+              {
+                  
+                  message.innerHTML="clicked "+event.target.innerHTML;
+              }
+              
+        
+             
+          }
+          for(x=0;x<highlight.length;x++)
+             {
+             
+              var message1=document.getElementById("message1");
+              highlight[x].onclick=function()
+              {
+                  
+                  message1.innerHTML="clicked highlighted "+event.target.innerHTML;
+              }
+             }
+          
+        </script>
+        
+    </body>
+</html>

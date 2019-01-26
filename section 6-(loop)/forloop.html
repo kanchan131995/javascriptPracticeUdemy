@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            var output=document.getElementById("output");
+            var userInput=prompt("enter the number of banana you want to eat" );
+            var calorie=89;
+            var userConsumption=0;
+            for(var x=1;x<=userInput;x++)
+            {
+                userConsumption+=calorie;
+                output.innerHTML+="calorie consume by eating "+x+  " banana is "+ userConsumption+"<br>";
+            }
+            output.innerHTML+="total calorie consume by eating banana is "+ userConsumption;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>udemy course</title>
+        <style>
+            td{
+                border:1px solid black;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            var output=document.getElementById("output");
+            var row=prompt("enter the number of rows");
+            var html="<table>";
+            var cell=1;
+            for(var x=0;x<row;x++)
+            {
+                html+="<tr>";
+                for(var y=0;y<5;y++)
+                {
+                    html+="<td> cell="+cell+"</td>";
+                    cell++;
+
+                }
+                html+="</tr>"
+            }
+            html+="<table>";
+            output.innerHTML=html;
+
+        
+        </script>
+    </body>
+</html>

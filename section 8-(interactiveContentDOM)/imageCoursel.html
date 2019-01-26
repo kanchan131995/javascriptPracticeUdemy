@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <img id="output" />
+        <script>
+        var imagePlace=0;
+        var imageN=['1','2','3','4','5'];
+        var imageC=['111','222','00FF00','0000FF','000','333'];
+        window.onload=startImg();
+       function startImg()
+       {
+           setInterval(swapimag,2000)
+       }
+       
+       
+       
+        function swapimag()
+        {
+            if(imagePlace>=imageN.length)
+            {
+                imagePlace=0;
+            }
+            else{
+            
+            var imgsrc=document.getElementById("output");
+            imgsrc.src="http://via.placeholder.com/350x150/"+imageC[imagePlace]+"/fff?text=Image"+imageN[imagePlace];
+            imagePlace++;
+            }
+        }
+        
+        </script>
+    </body>
+</html>

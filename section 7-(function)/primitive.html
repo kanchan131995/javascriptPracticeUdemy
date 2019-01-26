@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+        var a="find";
+        var output=document.getElementById("output");
+        output.innerHTML+=a;
+        b=a;
+        a=5;
+
+        output.innerHTML+=b+"<br>";
+        output.innerHTML+=a+"<br>";
+
+        var obj={
+            name:"tom",
+            profile:"developer"
+
+        }
+        var team=obj;
+
+        team.name = "Kanchan"
+        
+
+        output.innerHTML+=team.name+"<br>";
+        output.innerHTML+=obj.name+"<br>";
+
+
+
+
+        </script>
+    </body>
+</html>

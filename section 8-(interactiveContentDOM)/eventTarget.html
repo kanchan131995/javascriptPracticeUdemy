@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output">page1</div>
+        <form >
+        First Name:    <input type="text" name="e1" value="Kanchan"><br>
+        Last name:    <input type="text" name="e2" value="Tiwari"><br>
+            <input type="button" onClick="gesubmit()" value="submit">
+
+
+        </form>
+        <form >
+                First Name:<input type="text" name="e1" value="Shweta"><br>
+                Last name:<input type="text" name="e2" value="Tiwari"><br>
+                    <input type="button" onClick="gesubmit()" value="submit">
+        
+        
+                </form>
+        <script>
+            function gesubmit()
+            {
+            var p=event.target.parentElement;
+            message("WELCOME "+ p.e1.value+" " +p.e2.value);
+            }
+            function message(m)
+            {
+                document.getElementById("output").innerHTML=m;
+            }
+
+        
+        </script>
+    </body>
+</html>

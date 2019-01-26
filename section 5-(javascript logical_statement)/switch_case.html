@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"> Switch statement</div>
+        <script>
+        var output=document.getElementById("output");
+        var html;
+        //var q=Number(prompt("enter the time"));
+        var q=prompt("what are you doing?");
+
+        // switch(q)
+        // {
+        //     case 1:
+        //     html=" dinner time";
+        //     break;
+
+        //     case 2:
+        //     html=" dancing time";
+        //     break;
+
+        //     case 3:
+        //     html=" lunch time";
+        //     break;
+
+        //     case 4:
+        //     html=" singing time";
+        //     break;
+
+        //     case 5:
+        //     html=" study time";
+        //     break;
+
+        // }
+        switch(q)
+        {
+            case "dinner time":
+            html="8:00 PM";
+            break;
+
+            case "dancing time":
+            html="6:00 PM ";
+            break;
+
+            case "lunch time":
+            html="3:00 PM";
+            break;
+
+            case "singing time":
+            html="4:00 PM";
+            break;
+
+            case "study time":
+            html="5:00 PM";
+            break;
+
+        }
+
+        output.innerHTML=html;
+        </script>
+    </body>
+</html>

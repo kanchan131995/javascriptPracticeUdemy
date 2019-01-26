@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output">Page1</div>
+        <input type="button" onclick="start()" value="start"/>
+        <input type="button" onclick="stop()" value="stop"/>
+        <!-- /<div id="label"></div> -->
+        <script>
+        output=document.getElementById("output");
+        window.setTimeout(myupdate,5000);
+        var timer;
+        function myupdate()
+        {
+            output.innerHTML="Welcome to our site :)";
+        }
+        function start()
+        {
+           timer= window.setTimeout(find,1000);
+
+        }
+        function find()
+        {
+            alert("great");
+        }
+        function stop()
+        {
+            window.clearInterval(timer);//stop button work only when if stop button is click immediately after start button
+        }
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+         var output=document.getElementById("output");
+         console.dir(window);
+         for(var prop in window)
+         {
+             document.write(prop+" "+window[prop]+"<br>");
+         }
+         output.innerHTML+=window.innerHeight+" "+window.innerWidth;
+        var w= window.open("deck.html");
+         w.onbeforeunhold=function(){alert("don't go anywhere");}
+
+         
+        </script>
+
+    </body>
+    
+</html>

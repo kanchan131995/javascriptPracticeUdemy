@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <input type="button" onclick="start()" value="click me"/>
+        <script>
+            var output=document.getElementById("output");
+            var arr=["tom","jerry","luke","mary","java"];
+            var secret=arr[Math.floor(Math.random()*5)];
+            var userInput;
+            output.innerHTML+=secret+"<br>";
+            function start()
+            {
+                userInput=prompt("guess the secret code?");
+                guessing(userInput); 
+            }
+            function guessing(userInput)
+            {
+                if(userInput===secret)
+                {
+                    output.innerHTML+="your guess is correct"
+                }
+                else{
+                    userInput=prompt("guess Again?");
+                    guessing(userInput);
+                }
+
+            }
+
+
+        </script>
+    </body>
+</html>

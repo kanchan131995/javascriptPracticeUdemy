@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body onload="myfun('body;')"> 
+
+        <div id="output">Page1</div>
+        <input type="button" id="id1" value="click1">
+        <input type="button" id="id2" value="click2">
+        <input type="button" id="id3" value="click3">
+
+<script>
+    var output=document.getElementById("output");
+    window.onload=function(event)
+    {
+        myfun("window;");
+     }
+    
+    function myfun(a){
+        output.innerHTML="WELCOME "+a;
+    }
+
+
+
+
+        </script>
+    </body>
+</html>

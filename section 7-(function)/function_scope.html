@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+        var output=document.getElementById("output");
+        var outside="world";
+
+        function myfunc()
+        {
+             inside="hello";//local variable is not defined properly like (var inside="hello")
+            console.log(inside);
+            console.log(outside);
+        }
+        myfunc();
+
+        console.log(inside);
+        console.log(outside);
+        </script>
+    </body>
+</html>

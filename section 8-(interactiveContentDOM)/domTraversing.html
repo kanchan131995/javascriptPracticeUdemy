@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <form name="myform">
+    <div id="output">Page1</div>
+      <input type="text" id="name" value="http://www.google.com"/>
+      <input type="button" onclick="gourl()" value="go"/>  
+
+    
+</form>
+        <script>
+            function gourl()
+            {
+                var url=document.getElementById("name").value;
+                window.location=url;
+            }
+
+        </script>
+    
+    </body>
+</html>

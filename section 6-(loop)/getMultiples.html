@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+        var output=document.getElementById("output");
+        var count=0;
+        var html;
+        for(x=1;x<=1000;x++)
+        {
+            if(x%5==0)
+            {
+                count=count+x;
+                output.innerHTML+=x+" is multiple of 5 "+" sum till now= "+ count+"<br>";
+            }
+        }
+        output.innerHTML+="total sum is "+ count;
+        </script>
+    </body>
+</html>

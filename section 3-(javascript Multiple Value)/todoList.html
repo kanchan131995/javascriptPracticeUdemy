@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <script>
+            var task=["wake up", "make tea", "go to office", "have dinner","sleep","great"];
+            var progress=["done","inProgress","to do"];
+            var question1=prompt("enter the task from 1-"+ task.length);
+            var question2=prompt("enter the status 1=done, 2=inprogess, 3=to do");
+            console.log(task[task.length-1]);
+            task[task.length+1]=prompt("enter the element");
+
+            console.log("task is " + task[question1-1] +" and the status is " + progress[question2-1] );
+            
+            </script>
+    </body>
+</html>

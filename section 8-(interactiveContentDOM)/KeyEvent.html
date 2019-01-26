@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>udemy course</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <input type="text" onkeypress="return numcheck()" onpaste="return false" />
+    <script>
+      var output = document.getElementById("output");
+      function numcheck() {
+        var output = document.getElementById("output");
+        if (isNaN(event.key)) {
+          message(event.key);
+        }
+        return isNaN(event.key);
+      }
+
+      function message(m) {
+        output.innerHTML += m;
+      }
+    </script>
+  </body>
+</html>

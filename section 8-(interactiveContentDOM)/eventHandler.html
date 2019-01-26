@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output">Page1</div>
+        <input type="button" id="id1" value="click1">
+        <input type="button" id="id2" value="click2">
+        <input type="button" id="id3" value="click3">
+        <script>
+
+            document.getElementById("id1").onclick=myfun;
+            function myfun(){
+                console.log(this);
+                console.dir(this);
+                this.value="worked";
+                // document.getElementById("output").innerHTML="worked";
+                document.getElementById("id1").value="clicked";
+            }
+    
+    
+    </script>
+    </body>
+</html>

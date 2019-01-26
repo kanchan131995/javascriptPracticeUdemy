@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <form  name="myForm">
+        <div id="wrapper">Page1</div>
+        <input type="text" id="url" value="http://www.google.com"/>
+        <input type="button" onclick="goUrl()" value="go to url"/>
+        <input type="button" onclick="fav('http://www.w3schools.com/html')" value="Go to my fav url"/>
+        <input type="button" onclick="myvalue()" value="value"/>
+        </form>
+        
+        <script>
+            var output=document.getElementById("wrapper");
+            function goUrl()
+            {
+              var url=document.getElementById("url").value;
+                window.location=url;
+
+            }
+            function fav(myurl)
+            {
+               
+                window.location=myurl;
+
+            }
+            function myvalue()
+            {
+                output.innerHTML=document.myForm.url.value;
+            }
+        
+        </script>
+    </body>
+</html>

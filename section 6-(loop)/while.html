@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+    var password="kanchan"
+    var userInput=prompt("enter your password");
+
+    while(userInput!=password)
+    {
+        var userInput=prompt("wrong password again enter your password");
+    }
+
+    output=document.getElementById("output");
+    output.innerHTML="got the correct password "+userInput;
+    </script>
+</body>
+</html>

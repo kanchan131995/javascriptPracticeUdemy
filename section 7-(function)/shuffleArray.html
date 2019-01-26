@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <input type="button" onclick="start()" value="click me">
+        <div id="output"></div>
+        <script>
+        var output=document.getElementById("output");
+        var arr=["tom","jerry","kanchan","luke","java","html"];
+
+            function start()
+            {
+                shuffle(arr);
+                output.innerHTML+= arr+"<br>"
+            }
+        function shuffle()
+        {
+
+            for(var x=arr.length-1;x>=0;x--)
+            {
+                var holder=Math.floor(Math.random()*(x+1));
+                var temp=arr[x];
+                arr[x]=arr[holder];
+                arr[holder]=temp;
+            }
+            
+        }
+        </script>
+    </body>
+</html>

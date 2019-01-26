@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>udemy course</title>
+    </head>
+    <body>
+        <input type="text" id="num1"/>
+        <input type="text" id="num2"/>
+        <input type="text" id="num3"/>
+        <br>
+        <input type="button" onclick="crack()" value="try"/>
+        <div id="code"></div>
+        <div id="output"></div>
+
+        <script>
+        var output=document.getElementById("output");
+        var a=document.getElementById("num1");
+        var b=document.getElementById("num2");
+        var c=document.getElementById("num3");
+
+        var code=[];
+        for(var x=0;x<3;x++)
+        {
+            code.push(Math.floor(Math.random()*10));
+        }
+        var secret=document.getElementById("code");
+        secret.innerHTML+=code;
+
+        function crack()
+        {
+            
+            var num1=Number(a.value);
+            var num2=Number(b.value);
+            var num3=Number(c.value);
+            var finder=[a.value,b.value,c.value];
+           (num1>code[0])?output.innerHTML+="L":(num1<code[0])?output.innerHTML+="H":output.innerHTML+=code[0];
+            (num2>code[1])?output.innerHTML+="L":(num2<code[1])?output.innerHTML+="H":output.innerHTML+=code[1];
+            (num3>code[2])?output.innerHTML+="L":(num3<code[2])?output.innerHTML+="H":output.innerHTML+=code[2]+"<br>";
+            var flag=1;
+          for(var x in finder )
+          {
+              if(code[x]!=finder[x])
+              {
+                  flag=0;
+              }
+          }
+          if(flag==1)
+          {
+              output.innerHTML="you got it correct"+"<br>";
+          }
+            
+        }
+        
+        </script>
+
+
+    </body>
+</html>

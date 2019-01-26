@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <div id="output"></div>
+          <img src="http://via.placeholder.com/350x150/ffff00/fff?text=Image1" id="img1" onmouseover="cimg(this)" onmouseout="bimg(this)">  
+        <script>
+            var imgHolder="http://via.placeholder.com/350x150/ffff00/fff?text=Image10";
+            window.onload=function(){
+             document.getElementById("img1").src=imgHolder;
+            }
+            function cimg(t){
+                message(t.src);
+                imgHolder=t.src;
+                t.src="http://via.placeholder.com/350x150/ff0000/fff?text=Image2";
+                message(t.src);
+                
+                
+
+            }
+            function bimg(t){
+                t.src=imgHolder;
+                document.getElementById("output").innerHTML=t.src;
+
+            }
+            function message(t)
+            {
+                document.getElementById("output").innerHTML=t;
+
+            }
+
+
+        </script>
+    </body>
+</html>

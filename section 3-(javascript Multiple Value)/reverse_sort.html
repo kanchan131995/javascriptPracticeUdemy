@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            udemy course
+        </title>
+    </head>
+    <body>
+        <script>
+        var animals=["cat","dog","rabbit","bird","fish","zebra"];
+        animals.push("ship");
+        animals.pop();
+        animals.shift();//remove first element;
+        animals.unshift("horse");//add new element at the first position
+
+
+        animals.sort();//sort the array element
+        animals.reverse();//reverse the array the array list
+        console.log(animals);
+
+        animals[20]="horse";
+        x=Number(prompt("enter the index of array"));
+        animals.fill("mouse",x,animals.length-1);
+        console.log(animals);
+
+
+
+
+        </script>
+    </body>
+</html>
